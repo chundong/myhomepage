@@ -1,0 +1,22 @@
+{
+    "name" : "My New Tab Page",
+    "version" : "1.0",
+    "manifest_version": 2,
+    "description" : "我的起始页",
+    "permissions" : [
+        "bookmarks",
+        "chrome://favicon/",
+        "topSites",
+        "management",
+        "tabs",
+        "fontSettings"
+    ],
+    "chrome_url_overrides" :
+    {
+        "newtab" : "newtab.html"
+    },
+    "options_page": "newtab.html#options",
+    "web_accessible_resources": [
+        "newtab.html"
+    ]
+}
